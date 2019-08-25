@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import BlockContainer from '../BlockContainer';
 
 const CardContainer = styled.div`
   width: 260px;
@@ -8,8 +9,6 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #0f0f17;
-  border-radius: 4px;
 `;
 
 const CardTitle = styled.h6`
@@ -49,11 +48,13 @@ const AdditionalContent = styled.p`
 const InfoCard = (props) => {
   const { title, mainNumber, additional } = props;
   return (
-    <CardContainer>
-      <CardTitle>{title}</CardTitle>
-      <MainNumber>{mainNumber}</MainNumber>
-      <AdditionalContent>{additional}</AdditionalContent>
-    </CardContainer>
+    <BlockContainer>
+      <CardContainer>
+        <CardTitle>{title}</CardTitle>
+        <MainNumber>{mainNumber}</MainNumber>
+        <AdditionalContent>{additional}</AdditionalContent>
+      </CardContainer>
+    </BlockContainer>
   );
 };
 
