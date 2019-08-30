@@ -2,12 +2,36 @@ import React from 'react';
 import logo from './logo.svg';
 import InfoCard from './components/InfoCard';
 import ActiveContacts from './components/ActiveContacts';
+import SocialMedia from './components/SocialMedia';
 import './App.css';
 
 import Man1 from './assets/profile-man-1.jpg';
 import Man2 from './assets/profile-man-2.jpg';
 import Woman1 from './assets/profile-woman-1.jpg';
 import Woman2 from './assets/profile-woman-2.jpg';
+
+const socialMediaItems = [
+  {
+    logo: Man1,
+    number: 400,
+    text: "Twitter followers",
+  },
+  {
+    logo: Man1,
+    number: 1000,
+    text: "Facebook followers",
+  },
+  {
+    logo: Man1,
+    number: 90,
+    text: "Instagram followers",
+  },
+  {
+    logo: Man1,
+    number: 350,
+    text: "LinkedIn followers",
+  },
+];
 
 const contactsList = [
   {
@@ -54,6 +78,7 @@ function App() {
           <InfoCard title="Pending Tasks" mainNumber="7" additional="3 in this week" />
         </div>
         <ActiveContacts contactsList={contactsList} />
+        <SocialMedia socialMediaItems={socialMediaItems} />
       </header>
     </div>
   );

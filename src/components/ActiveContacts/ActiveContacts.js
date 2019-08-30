@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import BlockContainer from '../BlockContainer';
 import SingleContact from './SingleContact';
+import { ComponentTitle } from '../Title/Title';
 
 const ContainerTitle = styled.h5`
   font-size: 18px;
@@ -16,9 +17,9 @@ const ActiveContacts = (props) => {
   const { contactsList } = props;
   return (
     <BlockContainer>
-      <ContainerTitle>
+      <ComponentTitle>
         Active Contacts
-      </ContainerTitle>
+      </ComponentTitle>
       {
         contactsList.map((contact,idx) => (
           <SingleContact 
