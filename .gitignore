@@ -76,3 +76,7 @@ yarn-error.log*
 */**.swp
 */**.swo
 *.vim
+.swp
+.swo
+*.swo
+*.swp
