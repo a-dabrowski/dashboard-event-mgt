@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import InfoCard from './components/InfoCard';
 import ActiveContacts from './components/ActiveContacts';
 import SocialMedia from './components/SocialMedia';
+import ExpendableBlock from './components/ExpendableBlock';
 import './App.css';
 
 import Man1 from './assets/profile-man-1.jpg';
@@ -59,19 +60,14 @@ const contactsList = [
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <ExpendableBlock title="Meetings">
+        <ul>
+          <li><a href="#">Create new</a></li>
+          <li><a href="#">Upcoming</a></li>
+          <li><a href="#">View Calendar</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </ExpendableBlock>
         <div>
           <InfoCard title="New Events" mainNumber="4" additional="+1 from last week" />
           <InfoCard title="Upcoming Events" mainNumber="2" additional="2 created by you" />
@@ -79,7 +75,6 @@ function App() {
         </div>
         <ActiveContacts contactsList={contactsList} />
         <SocialMedia socialMediaItems={socialMediaItems} />
-      </header>
     </div>
   );
 }
