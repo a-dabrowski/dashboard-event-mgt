@@ -8,33 +8,35 @@ const LeftMenuWrapper = styled.div`
   height: 90vh;
 `;
 const TopComponent = styled.div`
-  flex-basis: 0 0 20%;
+  flex-basis: 0 0 15%;
+  height: 10%;
   width: 100%;
   background-color: yellow;
 `;
 const MiddleComponent = styled.div`
-  flex-basis: 1 1 60%;
+  flex-basis: 1 1 70%;
   width: 100%;
   background-color: green;
 `;
 const BottomComponent = styled.div`
-  flex-basis: 0 0 20%;
+  flex-basis: 0 0 15%;
   width: 100%;
+  height: 10%;
   background-color: red;
 `;
 
 const LeftMenu = (props) => {
-  const { topItem, middleItem, bottomItem } = props;
+  const { children } = props;
   return (
     <LeftMenuWrapper>
       <TopComponent>
-        { topItem }
+        EventManager
       </TopComponent>
       <MiddleComponent>
-        { middleItem }
+        { children }
       </MiddleComponent>
       <BottomComponent>
-        { bottomItem }
+        <button>New Task</button>
       </BottomComponent>
     </LeftMenuWrapper>
   );

@@ -61,7 +61,7 @@ const contactsList = [
 function App() {
   return (
     <div className="App">
-      <LeftMenu />
+      <LeftMenu>
       <ExpendableBlock title="Meetings">
         <ul>
           <li><a href="#">Create new</a></li>
@@ -70,6 +70,31 @@ function App() {
           <li><a href="#">Settings</a></li>
         </ul>
       </ExpendableBlock>
+      <ExpendableBlock title="Meetings">
+        <ul>
+          <li><a href="#">Create new</a></li>
+          <li><a href="#">Upcoming</a></li>
+          <li><a href="#">View Calendar</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </ExpendableBlock>
+      <ExpendableBlock title="Meetings">
+        <ul>
+          <li><a href="#">Create new</a></li>
+          <li><a href="#">Upcoming</a></li>
+          <li><a href="#">View Calendar</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </ExpendableBlock>
+      <ExpendableBlock title="Meetings">
+        <ul>
+          <li><a href="#">Create new</a></li>
+          <li><a href="#">Upcoming</a></li>
+          <li><a href="#">View Calendar</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </ExpendableBlock>
+      </LeftMenu>
         <div>
           <InfoCard title="New Events" mainNumber="4" additional="+1 from last week" />
           <InfoCard title="Upcoming Events" mainNumber="2" additional="2 created by you" />
