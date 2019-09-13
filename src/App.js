@@ -4,6 +4,7 @@ import InfoCard from './components/InfoCard';
 import ActiveContacts from './components/ActiveContacts';
 import SocialMedia from './components/SocialMedia';
 import ExpendableBlock from './components/ExpendableBlock';
+import LeftMenu from './components/LeftMenu';
 import './App.css';
 
 import Man1 from './assets/profile-man-1.jpg';
@@ -60,6 +61,7 @@ const contactsList = [
 function App() {
   return (
     <div className="App">
+      <LeftMenu />
       <ExpendableBlock title="Meetings">
         <ul>
           <li><a href="#">Create new</a></li>
