@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import MasterButton from '../Button';
 
 const LeftMenuWrapper = styled.div`
   display: flex;
@@ -36,7 +37,7 @@ const LeftMenu = (props) => {
         { children }
       </MiddleComponent>
       <BottomComponent>
-        <button>New Task</button>
+        <MasterButton>New Task</MasterButton>
       </BottomComponent>
     </LeftMenuWrapper>
   );
