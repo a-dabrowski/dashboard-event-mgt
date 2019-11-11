@@ -6,6 +6,13 @@ import { ComponentTitle } from '../Title/Title';
 
 import data from './data';
 
+const Tooltip = styled.div`
+  background-color: #7b3fed;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 4px;
+`;
 const theme = {
   textColor: '#fff',
   axis: {
@@ -67,6 +74,7 @@ const EngagementChart = (props) => {
             legendOffset: -40,
             legendPosition: 'middle'
         }}
+        tooltip={(slice) => (<Tooltip>{slice.point.data.y}</Tooltip>)}
         theme={theme}
         pointSize={10}
         colors='#7b3fed'
