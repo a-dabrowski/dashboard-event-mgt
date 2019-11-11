@@ -7,10 +7,11 @@ const Component = styled.div`
   border-radius: 4px;
   padding: 10px;
   margin: 10px;
+  width: ${props => props.size ? props.size : 'auto'};
 `;
 
 const BlockContainer = (props) => (
-  <Component>
+  <Component {...props}>
     {props.children}
   </Component>
 );

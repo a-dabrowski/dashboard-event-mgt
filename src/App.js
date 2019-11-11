@@ -5,6 +5,8 @@ import ActiveContacts from './components/ActiveContacts';
 import SocialMedia from './components/SocialMedia';
 import ExpendableBlock from './components/ExpendableBlock';
 import LeftMenu from './components/LeftMenu';
+import Chart from './components/Chart';
+import Row from './components/Row';
 import './App.css';
 
 import Man1 from './assets/profile-man-1.jpg';
@@ -95,12 +97,15 @@ function App() {
         </ul>
       </ExpendableBlock>
       </LeftMenu>
-        <div>
+        <Row>
           <InfoCard title="New Events" mainNumber="4" additional="+1 from last week" />
           <InfoCard title="Upcoming Events" mainNumber="2" additional="2 created by you" />
           <InfoCard title="Pending Tasks" mainNumber="7" additional="3 in this week" />
-        </div>
-        <ActiveContacts contactsList={contactsList} />
+        </Row>
+        <Row>
+          <ActiveContacts contactsList={contactsList} />
+          <Chart />
+        </Row>
         <SocialMedia socialMediaItems={socialMediaItems} />
     </div>
   );

@@ -9,20 +9,23 @@ const LeftMenuWrapper = styled.div`
   height: 90vh;
 `;
 const TopComponent = styled.div`
-  flex-basis: 0 0 15%;
-  height: 10%;
+  flex-basis: 15%;
+  flex-grow: 0;
+  flex-shrink: 0;
   width: 100%;
   background-color: yellow;
 `;
 const MiddleComponent = styled.div`
-  flex-basis: 1 1 70%;
+  flex-basis: 70%;
+  flex-grow: 1;
   width: 100%;
   background-color: green;
 `;
 const BottomComponent = styled.div`
-  flex-basis: 0 0 15%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 0;
   width: 100%;
-  height: 10%;
   background-color: red;
 `;
 
