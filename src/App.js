@@ -6,6 +6,7 @@ import SocialMedia from './components/SocialMedia';
 import ExpendableBlock from './components/ExpendableBlock';
 import LeftMenu from './components/LeftMenu';
 import Chart from './components/Chart';
+import Bar from './components/BarChart';
 import Row from './components/Row';
 import './App.css';
 
@@ -105,6 +106,9 @@ function App() {
         <Row>
           <ActiveContacts contactsList={contactsList} />
           <Chart />
+        </Row>
+        <Row>
+          <Bar />
         </Row>
         <SocialMedia socialMediaItems={socialMediaItems} />
     </div>
